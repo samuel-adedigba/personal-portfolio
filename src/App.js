@@ -1,6 +1,10 @@
 import Navbar from "./scenes/Navbar";
 import DotGroup from './scenes/DotGroup'
 import Landing from'./scenes/Landing'
+import Skills from "./scenes/Skills";
+import AboutMe from "./scenes/AboutMe";
+
+import LineGradient from './components/LineGradient'
 import useMediaQuery from './hooks/useMediaQuery'
 import { useState, useEffect } from "react"
 
@@ -40,6 +44,14 @@ function App() {
         <Landing
           setSelectedPage={setSelectedPage}
         />
+      </div>
+      <LineGradient/>
+      <div className="w-5/6 mx-auto md:h-full" >
+          <AboutMe/>
+      </div>
+      <LineGradient/>
+      <div className="w-5/6 mx-auto md:h-full" >
+          <Skills/>
       </div>
     </div>
 

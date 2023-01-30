@@ -26,7 +26,7 @@ const Navbar = ({ topOfPage, selectedPage, setSelectedPage }) => {
   const desktop = useMediaQuery("(min-width: 768px)");
   const navBackground = topOfPage ? "" : "bg-purple"
   return (
-    <nav className={` ${navBackground} z - 40 w-full fixed top-0 py-6`}  >
+    <nav className={` ${navBackground} z-40 w-full fixed top-0 py-6`}  >
       <div className="flex items-center justify-between mx-auto w-5/6 ">
         <h4 className="font-poppins text-3xl font-bold"> {`<BN/>`} </h4>
 
@@ -39,7 +39,7 @@ const Navbar = ({ topOfPage, selectedPage, setSelectedPage }) => {
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="about me"
+              page="about"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
@@ -90,7 +90,7 @@ const Navbar = ({ topOfPage, selectedPage, setSelectedPage }) => {
                 setSelectedPage={setSelectedPage}
               />
               <Link
-                page="about me"
+                page="about"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
