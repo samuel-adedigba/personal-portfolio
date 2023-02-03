@@ -59,7 +59,7 @@ const AboutMe = () => {
                     {mediumScreens ? (
                         <div
                             className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10 before:rounded-3xl
-            before:w-full before:max-w-[400px] md:before:max-w-[400px] before:h-full before:border-2 before:border-purple before:z-[-1]"
+            before:w-full before:max-w-[300px] md:before:max-w-[300px] before:h-full before:border-2 before:border-purple before:z-[-1]"
                         >
                             <img
                                 alt="profile photo"
