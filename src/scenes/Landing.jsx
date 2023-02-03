@@ -9,7 +9,7 @@ const Landing = ({ setSelectedPage }) => {
     return (
         <section
             id="home"
-            className="md:flex md:justify-between md:items-center gap-16 md:h-[100%] py-10"
+            className="md:flex md:justify-between md:items-center gap-16 md:h-[100%] py-10 "
         >
             <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
                 {largeScreens ? (

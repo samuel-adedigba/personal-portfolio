@@ -8,8 +8,8 @@ const AboutMe = () => {
     const mediumScreens = useMediaQuery("(min-width: 1060px)")
 
     return (
-        <section className="pt-10 pb-24" id="about" >
-            <div className="md:flex md:justify-between md:gap-16 mt-16 " >
+        <section className="pt-10 pb-24 h-[100vh]" id="about" >
+            <div className="md:flex md:justify-between md:gap-16 mt-32 " >
                 <motion.div
                     initial="hidden"
                     whileInView="visible"

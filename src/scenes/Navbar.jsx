@@ -10,9 +10,9 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerPage = page.toLowerCase()
   return (
     <AnchorLink
-      className={`${selectedPage === lowerPage ? "text-pink" : "text-purple"}
-        hover: text-light-pink transition duration-500
-      `}
+      className={`${selectedPage === lowerPage ? "text-pink-two" : "text-pink"}
+        hover:text-light-pink transition duration-500 
+      `} 
       href={`#${lowerPage}`}
       onClick={() => { setSelectedPage(lowerPage) }}
     >
