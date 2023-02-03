@@ -59,18 +59,18 @@ const AboutMe = () => {
                     {mediumScreens ? (
                         <div
                             className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10 before:rounded-3xl
-            before:w-full before:max-w-[300px] md:before:max-w-[300px] before:h-full before:border-2 before:border-purple before:z-[-1]"
+            before:w-full before:max-w-[400] md:before:max-w-[400] before:h-full before:border-2 before:border-purple before:z-[-1]"
                         >
                             <img
                                 alt="profile photo"
-                                className="z-10 max-w-[300px] "
+                                className="z-10 max-w-[400] "
                                 src={require("../assets/profile2.png")}
                             />
                         </div>
                     ) : (
                         <img
-                            alt="profile photo"
-                            className="z-10 max-w-[300px] "
+                            alt="profile"
+                            className="hover:filter hover:saturate-150 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[500px]"
                             src={require("../assets/profile2.png")}
                         />
                     )}
