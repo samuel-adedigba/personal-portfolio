@@ -5,6 +5,7 @@ import Skills from "./scenes/Skills";
 import AboutMe from "./scenes/AboutMe";
 import Projects from './scenes/Projects'
 import Contact from "./scenes/Contact";
+import Footer from "./scenes/Footer";
 
 import LineGradient from './components/LineGradient'
 import useMediaQuery from './hooks/useMediaQuery'
@@ -103,6 +104,8 @@ function App() {
           <Contact />
         </motion.div>
       </div>
+
+      <Footer/>
 
     </div>
   )
