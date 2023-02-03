@@ -68,11 +68,7 @@ const AboutMe = () => {
                             />
                         </div>
                     ) : (
-                        <img
-                            alt="profile"
-                            className="hover:filter hover:saturate-150 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[500px]"
-                            src={require("../assets/profile2.png")}
-                        />
+                        <></>
                     )}
                 </div>
             </div>
