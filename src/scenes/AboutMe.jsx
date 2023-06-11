@@ -26,7 +26,7 @@ const AboutMe = () => {
                     </p>
                     <LineGradient width="w-1/3" />
                     <p className="mt-10 mb-7" >
-                        Hello! My name is Beatriz Neaime, I'm a Computer Engineering student and I enjoy building things for web. I started lerning web development during the pandemics, doing online courses to learn the basics and improve my skills, making sure I've learned enough to move on and try the newest technologies. Here are some technologies I'm acquainted:
+                        Hello! My name is Beatriz Neaime, I'm a Computer Engineering student and full stack developer at <a href="https://www.arcanoprojetos.com" target="_blank" className="text-pink-two underline" >Arcano Projetos de Tecnologia</a>. I started lerning web development during the pandemics, doing online courses to learn the basics and improve my skills, making sure I've learned enough to move on and try the newest technologies. Here are some technologies I'm acquainted:
                     </p>
                     <div className="flex gap-6 flex-wrap">
                         <div className="flex justify-evenly">
@@ -52,6 +52,18 @@ const AboutMe = () => {
                         <div className="flex justify-evenly">
                             <span className="text-purple mx-1" >&#10148;</span>
                             <p>Node.js</p>
+                        </div>
+                        <div className="flex justify-evenly">
+                            <span className="text-purple mx-1" >&#10148;</span>
+                            <p>Next.js</p>
+                        </div>
+                        <div className="flex justify-evenly">
+                            <span className="text-purple mx-1" >&#10148;</span>
+                            <p>Typescript</p>
+                        </div>
+                        <div className="flex justify-evenly">
+                            <span className="text-purple mx-1" >&#10148;</span>
+                            <p>Styled-Components</p>
                         </div>
                     </div>
                 </motion.div>
