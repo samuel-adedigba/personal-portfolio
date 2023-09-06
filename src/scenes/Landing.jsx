@@ -48,7 +48,7 @@ const Landing = ({ setSelectedPage }) => {
                     </p>
 
                     <p className="mt-10 mb-7 font-source-code text-sm text-center md:text-start">
-                        Junior front-end developer.
+                        Front-end developer.
                     </p>
                 </motion.div>
 

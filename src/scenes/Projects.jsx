@@ -75,7 +75,7 @@ const Projects = () => {
                     <div className="flex justify-center text-center items-center p-10 bg-pink-two max-w-[400px] max-h-[400px] text-2xl font-semibold font-source-code ">
                         usefull and responsive interfaces
                     </div>
-                    <Project title="Arte de Caderno" subtitle="Creating a portal with two other students for a project developed inside the College. We are still building it, using ReactJS for the front-end and Node.js for the back-end" path="https://github.com/BeatrizNeaime/Arte-de-Caderno-Backup" />
+                    <Project title="Arte de Caderno" subtitle="Creating a portal with two other students for a project developed inside the College. We are still building it, using ReactJS for the front-end and Node.js for the back-end" path="https://github.com/BeatrizNeaime/arte-de-caderno-front" />
 
                     <Project title="BR finanças" subtitle="A finance controller named BR Finanças. Technologies used: HandleBars, NodeJS and MySQL." path="https://github.com/BeatrizNeaime/BR-financas" />
 
