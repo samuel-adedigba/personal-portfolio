@@ -1,0 +1,17 @@
+export const technologies = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Next.js",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "GitHub",
+    "Styled-Components",
+    "TailwindCSS",
+    "TypeScript",
+    "WordPress",
+    "SQL",
+    "React Native",
+]

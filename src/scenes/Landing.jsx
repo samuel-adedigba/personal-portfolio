@@ -9,9 +9,9 @@ const Landing = ({ setSelectedPage }) => {
     return (
         <section
             id="home"
-            className="md:flex md:justify-between md:items-center gap-16 md:h-[100%] py-10 "
+            className="md:flex md:justify-between md:items-center gap-16 h-screen py-10 "
         >
-            <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
+            <div className="md:w-screen md:basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
                 {largeScreens ? (
                     <div
                         className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[150px]
@@ -19,7 +19,7 @@ const Landing = ({ setSelectedPage }) => {
                     >
                         <img
                             alt="profile"
-                            className="hover:filter hover:saturate-150 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[500px]"
+                            className="hover:filter hover:saturate-150 transition duration-500 z-10 w-full max-w-[400px] md:max-w-sm rounded-t-[150px] "
                             src={require("../assets/profile.png")}
                         />
                     </div>
