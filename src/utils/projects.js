@@ -8,7 +8,7 @@ export const projects = [
     {
         title: "BR Finanças",
         subtitle: "A finance controller named BR Finanças.",
-        technologies: ["HandleBars", "Express", "MMySQL"],
+        technologies: ["HandleBars", "Express", "MySQL"],
         path: "https://github.com/BeatrizNeaime/BR-financas"
     },
     {

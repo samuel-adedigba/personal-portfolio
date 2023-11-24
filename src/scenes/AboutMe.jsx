@@ -8,7 +8,7 @@ const AboutMe = () => {
   const mediumScreens = useMediaQuery("(min-width: 1060px)");
 
   return (
-    <section className="pt-10 pb-24 h-screen" id="about">
+    <section className="md:pt-10 pb-24 min-h-screen" id="about">
       <div className="md:flex md:justify-between md:gap-16 mt-32 ">
         <motion.div
           initial="hidden"
@@ -26,16 +26,16 @@ const AboutMe = () => {
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
-            Hello! My name is Beatriz Neaime, I'm a Computer Engineering student
+            Hello! My name is Beatriz Neaime, I'm a Computer Engineer
             and full stack web developer at{" "}
             <a
-              className="text-pink-two"
+              className="text-pink-two font-bold"
               href="https://www.santocartao.com.br"
               target="_blank"
             >
               Santo Cartão
             </a>{" "}
-            . I started learning web development during the pandemics, doing
+            . I've started learning web development during the pandemics, through
             online courses to learn the basics and improve my skills, making
             sure I've learned enough to move on and try the newest technologies.
             Here are some technologies I'm acquainted:

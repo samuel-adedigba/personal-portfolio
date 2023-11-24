@@ -3,7 +3,7 @@ import LineGradient from "../components/LineGradient";
 
 const Skills = () => {
   return (
-    <section id="skills" className="pt-10 pb-24 h-screen">
+    <section id="skills" className="pt-10 pb-24 min-h-screen">
       <div className="md:flex md:justify-between md:gap-16 mt-32 ">
         <motion.div
           initial="hidden"

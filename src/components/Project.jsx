@@ -9,10 +9,10 @@ const projectV = {
 const Project = ({ title, subtitle, path, technologies }) => {
   const projectTitle = title.split(" ").join("-").toLowerCase();
   const overlayer = `absolute h-full w-full opacity-0 hover:opacity-80 transition duration-500
-    bg-pink z-30 flex flex-col justify-start items-start text-center p-16 text-deep-purple gap-3`;
+    bg-pink z-30 flex flex-col justify-start items-start text-center md:p-16 py-5 px-10 text-deep-purple gap-3`;
   return (
     <motion.div variants={projectV} className="relative">
-      <a href={path} target="_blank" rel="noopener noreferrer">
+      <a href={path} target="_blank" rel="noopener noreferrer" className="h-60 w-60" >
         <div className={overlayer}>
           <p className="text-3xl font-source-code font-bold ">{title}</p>
           <p className="mt-4 text-left">{subtitle}</p>

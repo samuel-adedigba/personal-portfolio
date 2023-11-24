@@ -12,7 +12,7 @@ const container = {
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-48">
+    <section id="projects" className="py-48 min-h-screen">
       <motion.div
         className="md:w-2/5 mx-auto text-center"
         initial="hidden"
