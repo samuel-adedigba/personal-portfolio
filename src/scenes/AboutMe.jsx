@@ -3,8 +3,9 @@ import { motion } from "framer-motion";
 import LineGradient from "../components/LineGradient";
 import {} from "react-bootstrap";
 import { technologies } from "../utils/tech";
+import { texts } from './../utils/texts';
 
-const AboutMe = () => {
+const AboutMe = ({language}) => {
   const mediumScreens = useMediaQuery("(min-width: 1060px)");
 
   return (
@@ -22,23 +23,19 @@ const AboutMe = () => {
           className=" md:w-1/3"
         >
           <p className="font-poppins font-semibold text-4xl mb-5">
-            {`<about/>`}
+            {texts[language].about.title}
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
-            Hello! My name is Beatriz Neaime, I'm a Computer Engineer
-            and full stack web developer at{" "}
+            {texts[language].about.text}
             <a
               className="text-pink-two font-bold"
-              href="https://www.santocartao.com.br"
+              href={texts[language].about.link}
               target="_blank"
             >
-              Santo Cartão
+              {texts[language].about.empresa}
             </a>{" "}
-            . I've started learning web development during the pandemics, through
-            online courses to learn the basics and improve my skills, making
-            sure I've learned enough to move on and try the newest technologies.
-            Here are some technologies I'm acquainted:
+            {texts[language].about.text2}
           </p>
           <div className="flex gap-6 flex-wrap">
             {technologies.map((tech, index) => {

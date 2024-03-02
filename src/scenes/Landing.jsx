@@ -2,8 +2,9 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import SocialMediaIcons from "../components/SocialMediaIcons";
+import { texts } from "../utils/texts";
 
-const Landing = ({ setSelectedPage }) => {
+const Landing = ({ setSelectedPage, language }) => {
   const largeScreens = useMediaQuery("(min-width: 1060px)");
 
   return (
@@ -48,7 +49,7 @@ const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-10 mb-7 font-source-code text-sm text-center md:text-start">
-            Front-end developer.
+            {texts[language].landing.subtitle}
           </p>
         </motion.div>
 
@@ -69,7 +70,7 @@ const Landing = ({ setSelectedPage }) => {
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            Contact Me
+            {texts[language].landing.contact}
           </AnchorLink>
           <AnchorLink
             className="rounded-r-sm bg-gradient-rainbow py-0.5 pr-0.5"
@@ -77,7 +78,7 @@ const Landing = ({ setSelectedPage }) => {
             href="#contact"
           >
             <div className="bg-deep-purple hover:text-purple transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
-              Let's talk.
+              {texts[language].landing.talk}
             </div>
           </AnchorLink>
         </motion.div>

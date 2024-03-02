@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import LineGradient from "../components/LineGradient";
 import Project from "../components/Project";
 import { projects } from "../utils/projects";
+import { texts } from "../utils/texts";
 
 const container = {
   hidden: {},
@@ -10,7 +11,7 @@ const container = {
   },
 };
 
-const Projects = () => {
+const Projects = ({language}) => {
   return (
     <section id="projects" className="py-48 min-h-screen">
       <motion.div
@@ -25,14 +26,13 @@ const Projects = () => {
         }}
       >
         <div>
-          <p className="font-poppins font-semibold text-4xl">{`<projects/>`}</p>
+          <p className="font-poppins font-semibold text-4xl">{texts[language].projects.title}</p>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-2/3" />
           </div>
         </div>
         <p className="mt-10 mb-10">
-          Projects are an important way to improve your abilities as a dev. Feel
-          free to visit my GitHub page and check out my repositories!
+          {texts[language].projects.text}
         </p>
       </motion.div>
 
@@ -50,7 +50,7 @@ const Projects = () => {
               <Project
                 key={index}
                 title={tech.title}
-                subtitle={tech.subtitle}
+                subtitle={tech.subtitle[language]}
                 path={tech.path}
                 technologies={tech.technologies}
               />

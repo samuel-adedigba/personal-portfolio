@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import LineGradient from "../components/LineGradient";
+import { texts } from "../utils/texts";
 
-const Skills = () => {
+const Skills = ({language}) => {
   return (
     <section id="skills" className="pt-10 pb-24 min-h-screen">
       <div className="md:flex md:justify-between md:gap-16 mt-32 ">
@@ -17,14 +18,13 @@ const Skills = () => {
           className=" md:w-1/3"
         >
           <div>
-            <p className="font-poppins font-semibold text-4xl">{`<skills/>`}</p>
+            <p className="font-poppins font-semibold text-4xl">{texts[language].skills.title}</p>
             <div className="flex justify-center mt-5">
               <LineGradient width="w-2/3" />
             </div>
           </div>
           <p className="mt-10 mb-10">
-            Since beginning my journey as a front-end developer I've improved my
-            soft skills, always trying to be a better professional.
+            {texts[language].skills.text}
           </p>
         </motion.div>
       </div>
@@ -45,7 +45,7 @@ const Skills = () => {
             <div className="z-10">
               <p className="font-source-code font-semibold text-5xl">01</p>
               <p className="font-source-code font-semibold text-3xl mt-3">
-                non-stop learning
+                {texts[language].skills[1].title}
               </p>
             </div>
             <div className="w-1/2  md:w-3/4 bg-purple absolute right-0 top-0 z-[-1]">
@@ -53,8 +53,7 @@ const Skills = () => {
             </div>
           </div>
           <p className="mt-5">
-            Technology never stops improving, that's why those who works in tech
-            can never stop learning too.
+            {texts[language].skills[1].text}
           </p>
         </motion.div>
         <motion.div
@@ -72,7 +71,7 @@ const Skills = () => {
             <div className="z-10">
               <p className="font-source-code font-semibold text-5xl">02</p>
               <p className="font-source-code font-semibold text-3xl mt-3">
-                communicative
+                {texts[language].skills[2].title}
               </p>
             </div>
             <div className="w-1/2  md:w-3/4 bg-pink-two absolute right-0 top-0 z-[-1]">
@@ -80,8 +79,7 @@ const Skills = () => {
             </div>
           </div>
           <p className="mt-5">
-            No matter your profession, communication is always a need in every
-            industry.
+            {texts[language].skills[2].text}
           </p>
         </motion.div>
         <motion.div
@@ -99,7 +97,7 @@ const Skills = () => {
             <div className="z-10">
               <p className="font-source-code font-semibold text-5xl">03</p>
               <p className="font-source-code font-semibold text-3xl mt-3">
-                open-minded
+                {texts[language].skills[3].title}
               </p>
             </div>
             <div className="w-1/2  md:w-3/4 bg-blue absolute right-0 top-0 z-[-1]">
@@ -107,8 +105,7 @@ const Skills = () => {
             </div>
           </div>
           <p className="mt-5">
-            When you work for people you've got to accept new ideas from clients
-            or teammates and be able to work on them.
+            {texts[language].skills[3].text}
           </p>
         </motion.div>
       </div>

@@ -17,6 +17,7 @@ import { motion } from "framer-motion";
 function App() {
   const [selectedPage, setSelectedPage] = useState('home');
   const [topOfPage, setTopOfPage] = useState(true);
+  const [language, setLanguage] = useState("pt");
   const mediumScreens = useMediaQuery("(min-width: 1060px)")
 
   useEffect(() => {
@@ -38,6 +39,8 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
         topOfPage={topOfPage}
+        language={language}
+        setLanguage={setLanguage}
       />
 
       <div className="w-5/6 mx-auto" >
@@ -54,6 +57,7 @@ function App() {
         >
           <Landing
             setSelectedPage={setSelectedPage}
+            language={language}
           />
         </motion.div>
       </div>
@@ -66,7 +70,7 @@ function App() {
           amount="all"
           onViewportEnter={() => setSelectedPage("about")}
         >
-          <AboutMe />
+          <AboutMe language={language} />
         </motion.div>
       </div>
 
@@ -78,7 +82,7 @@ function App() {
           amount="all"
           onViewportEnter={() => setSelectedPage("skills")}
         >
-          <Skills />
+          <Skills language={language} />
         </motion.div>
       </div>
 
@@ -90,7 +94,7 @@ function App() {
           amount="all"
           onViewportEnter={() => setSelectedPage("projects")}
         >
-          <Projects />
+          <Projects language={language} />
         </motion.div>
       </div>
 
@@ -102,7 +106,7 @@ function App() {
           amount="all"
           onViewportEnter={() => setSelectedPage("contact")}
         >
-          <Contact />
+          <Contact language={language} />
         </motion.div>
       </div>
 

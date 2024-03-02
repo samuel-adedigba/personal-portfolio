@@ -3,8 +3,9 @@ import useMediaQuery from '../hooks/useMediaQuery'
 
 import { useForm } from "react-hook-form"
 import { motion } from "framer-motion"
+import { texts } from "../utils/texts"
 
-const Contact = () => {
+const Contact = ({language}) => {
     const {
         register,
         trigger,
@@ -35,7 +36,7 @@ const Contact = () => {
             >
                 <div>
                     <p className="font-playfair font-semibold text-4xl">
-                        {`<contact/>`}
+                        {texts[language].contact.title}
                     </p>
                     <div className="flex md:justify-center my-5">
                         <LineGradient width="w-2/3" />
@@ -89,13 +90,13 @@ const Contact = () => {
                     <form
                         target="_blank"
                         onSubmit={onSubmit}
-                        action="https://formsubmit.co/863fda56a8e7f8c9158442ba975c5708"
+                        action="https://formsubmit.co/beatrizneaime@outlook.com"
                         method="POST"
                     >
                         <input
                             className="w-full bg-purple font-semibold placeholder-opaque-black p-3"
                             type="text"
-                            placeholder="NAME"
+                            placeholder={language === "pt" ? "NOME" : "NAME"}
                             {...register("name", {
                                 required: true,
                                 maxLength: 100,
@@ -127,7 +128,7 @@ const Contact = () => {
                         <textarea
                             className="w-full bg-purple font-semibold placeholder-opaque-black p-3 mt-5"
                             name="message"
-                            placeholder="MESSAGE"
+                            placeholder={language === "pt" ? "MENSAGEM" : "MESSAGE"}
                             rows="4"
                             cols="50"
                             {...register("message", {
@@ -145,10 +146,10 @@ const Contact = () => {
                         )}
 
                         <button
-                            className="p-5 bg-gradient-rainbow font-semibold mt-5 hover:bg-red hover:text-deep-purple transition duration-500"
+                            className="p-5 bg-gradient-rainbow font-semibold mt-5 hover:bg-red hover:text-deep-purple transition duration-500 uppercase"
                             type="submit"
                         >
-                            SEND ME A MESSAGE
+                            {texts[language].contact.btn}
                         </button>
                     </form>
                 </motion.div>
