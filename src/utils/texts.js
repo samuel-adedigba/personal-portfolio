@@ -1,7 +1,7 @@
 export const texts = {
   pt: {
     landing: {
-      subtitle: "Desenvolvedora Front-end.",
+      subtitle: "Desenvolvedora Full Stack.",
       contact: "Fale Comigo",
       talk: "Vamos conversar.",
     },
@@ -47,7 +47,7 @@ export const texts = {
   },
   en: {
     landing: {
-      subtitle: "Front-end Developer.",
+      subtitle: "Full StackDeveloper.",
       contact: "Contact Me",
       talk: "Let's talk.",
     },
@@ -69,7 +69,7 @@ export const texts = {
       title: "<skills/>",
       text: `Since the beginning of my journey as a developer, I've improved my soft skills, always seeking to be a better professional. `,
       1: {
-        title: "continuous learning",
+        title: "non-stop learning",
         text: "Technology never stops updating, that's why those who work with technology should not stop updating themselves either.",
       },
       2: {

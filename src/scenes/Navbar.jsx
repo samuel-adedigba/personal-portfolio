@@ -5,7 +5,13 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { AiOutlineCloseCircle, AiOutlineMenu } from "react-icons/ai";
 import { GiBrazilFlag, GiUsaFlag } from "react-icons/gi";
 
-const Link = ({ label, page, selectedPage, setSelectedPage, setMenuToggled }) => {
+const Link = ({
+  label,
+  page,
+  selectedPage,
+  setSelectedPage,
+  setMenuToggled,
+}) => {
   const lowerPage = page.toLowerCase();
   return (
     <AnchorLink
@@ -86,29 +92,31 @@ const Navbar = ({
               setMenuToggled={setMenuToggled}
             />
             <div className="flex flex-col relative">
-              <IoLanguageOutline
-                className="cursor-pointer relative hover:text-pink-two"
+              <button
+                className="rounded-full bg-pink-two p-1"
                 onClick={() => setTranslateMenu(!translateMenu)}
-              />
+              >
+                <IoLanguageOutline className="cursor-pointer relative text-deep-purple hover:text-white transition duration-300" />
+              </button>
               {translateMenu && (
-                <div className="absolute top-4 bg-light-purple px-2 py-1 w-auto">
+                <div className="absolute top-5 left-2 bg-light-purple px-2 py-1 w-auto">
                   <button
                     className="text-deep-blue"
                     onClick={() => changeLanguage("pt")}
                   >
-                    <GiBrazilFlag
-                      className={`text-xl ${
-                        language === "pt" ? "text-pink-two" : "text-white"
-                      }`}
-                    />
+                    <p className={`font-source-code ${language === 'pt' ? "text-deep-purple" : "text-white"}`}>
+                      PT
+                    </p>
                   </button>
                   <button
                     className={`text-deep-blue ${
-                      language === "en" ? "text-pink-two" : "text-white"
+                      language === "en" ? "text-deep-purple" : "text-white"
                     }`}
                     onClick={() => changeLanguage("en")}
                   >
-                    <GiUsaFlag className="text-xl" />
+                    <p className={`font-source-code ${language === "en" ? "text-deep-purple" : "text-white"}`}>
+                      EN
+                    </p>
                   </button>
                 </div>
               )}

@@ -17,7 +17,7 @@ import { motion } from "framer-motion";
 function App() {
   const [selectedPage, setSelectedPage] = useState('home');
   const [topOfPage, setTopOfPage] = useState(true);
-  const [language, setLanguage] = useState("pt");
+  const [language, setLanguage] = useState("en");
   const mediumScreens = useMediaQuery("(min-width: 1060px)")
 
   useEffect(() => {

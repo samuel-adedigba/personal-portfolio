@@ -36,14 +36,14 @@ const Projects = ({language}) => {
         </p>
       </motion.div>
 
-      <div className="flex justify-center gap-2">
+      <div className="flex justify-center gap-2 w-full">
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.5 }}
-          variants={container}
-          className="sm:grid sm:grid-cols-2 gap-2 "
+          variants={container} 
+          className="flex flex-col gap-5 w-full items-center justify-center"
         >
           {projects.map((tech, index) => {
             return (
@@ -53,6 +53,8 @@ const Projects = ({language}) => {
                 subtitle={tech.subtitle[language]}
                 path={tech.path}
                 technologies={tech.technologies}
+                img={tech.img}
+                git={tech.git}
               />
             );
           })}
