@@ -11,7 +11,7 @@ const container = {
   },
 };
 
-const Projects = ({language}) => {
+const Projects = ({ language }) => {
   return (
     <section id="projects" className="py-48 min-h-screen">
       <motion.div
@@ -26,14 +26,14 @@ const Projects = ({language}) => {
         }}
       >
         <div>
-          <p className="font-poppins font-semibold text-4xl">{texts[language].projects.title}</p>
+          <p className="font-poppins font-semibold text-4xl">
+            {texts[language].projects.title}
+          </p>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-2/3" />
           </div>
         </div>
-        <p className="mt-10 mb-10">
-          {texts[language].projects.text}
-        </p>
+        <p className="mt-10 mb-10">{texts[language].projects.text}</p>
       </motion.div>
 
       <div className="flex justify-center gap-2 w-full">
@@ -42,22 +42,14 @@ const Projects = ({language}) => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.5 }}
-          variants={container} 
+          variants={container}
           className="flex flex-col gap-5 w-full items-center justify-center"
         >
-          {projects.map((tech, index) => {
-            return (
-              <Project
-                key={index}
-                title={tech.title}
-                subtitle={tech.subtitle[language]}
-                path={tech.path}
-                technologies={tech.technologies}
-                img={tech.img}
-                git={tech.git}
-              />
-            );
-          })}
+          {/* idk why foreach/map is not working */}
+          <Project project={projects[0]} language={language} />
+          <Project project={projects[1]} language={language} />
+          <Project project={projects[2]} language={language} />
+          <Project project={projects[3]} language={language} />
         </motion.div>
       </div>
     </section>

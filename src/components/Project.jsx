@@ -1,45 +1,48 @@
 import { motion } from "framer-motion";
-import { FaRegEye, FaGithub } from "react-icons/fa";
-import useMediaQuery from "../hooks/useMediaQuery";
+import useMediaQuery from "./../hooks/useMediaQuery";
+import { FaGithub, FaEye } from "react-icons/fa";
+import arte from '../assets/projects/arte.png'
+import brF from '../assets/projects/br-finanças.png'
+import advice from '../assets/projects/advice.png'
+import splitter from '../assets/projects/splitter.png'
+import patinhas from '../assets/projects/patinhas-felizes.png'
 
 const projectV = {
   hidden: { opacity: 0, scale: 0.8 },
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({
-  title,
-  subtitle,
-  path,
-  technologies,
-  img,
-  language,
-  git,
-}) => {
-  const projectTitle = title.split(" ").join("-").toLowerCase();
+const images = {
+  "arte": arte,
+  "br-finanças": brF,
+  "advice": advice,
+  "splitter": splitter,
+  "patinhas-felizes": patinhas
+}
+
+const Project = ({ project, language }) => {
   const desktop = useMediaQuery("(min-width: 768px)");
 
-  if (desktop) {
-    return (
-      <motion.div variants={projectV} className="relative">
-        <div className="flex gap-4 bg-white text-black rounded-md p-4 w-full  ">
-          <div className="w-1/2 md:w-full h-full ">
-            <img
-              src={require(`../assets/${projectTitle}.jpeg`)}
-              alt={title}
-              className="w-full h-full object-cover rounded-md"
-            />
+  return (
+    <motion.div variants={projectV} className="relative">
+      {desktop ? (
+        <div className="flex bg-light-pink text-black rounded-md">
+          <div className="w-1/2">
+            <img src={images[project.img]} alt={project.title} />
           </div>
-          <div className="w-1/2 flex flex-col items-start h-full gap-2 mt-5 relative ">
-            <p className="text-3xl font-source-code font-bold">{title}</p>
-            <p className="text-lg font-poppins">{subtitle}</p>
-            <p className="text-lg font-poppins">Stacks:</p>
-            <div className="flex gap-2">
-              {technologies.map((tech, index) => {
+          <div className="flex flex-col items-start p-4 gap-4 w-1/2">
+            <p className="font-source-code font-semibold text-2xl">
+              {project.title}
+            </p>
+            <div className="flex justify-between mt-5">
+              {project.subtitle[language]}
+            </div>
+            <div className="flex gap-4">
+              {project.technologies.map((tech, index) => {
                 return (
                   <div
                     key={index}
-                    className="bg-pink-two text-white font-poppins rounded-md p-2"
+                    className="bg-pink-two text-white rounded-md px-2 py-1"
                   >
                     {tech}
                   </div>
@@ -47,54 +50,47 @@ const Project = ({
               })}
             </div>
             <div className="flex gap-4">
-              {git && (
+              {project.git && (
                 <a
-                  href={git}
+                  href={project.git}
                   target="_blank"
                   rel="noreferrer"
-                  className="bg-purple flex items-center gap-2 text-white font-poppins rounded-md p-2 transition duration-500 hover:bg-deep-purple cursor-pointer"
+                  className="bg-purple hover:bg-deep-purple transition duration-200 text-white rounded-md px-2 py-1 flex items-center gap-1"
                 >
                   <FaGithub />
                   GitHub
                 </a>
               )}
-              {path && (
+              {project.path && (
                 <a
-                  href={path}
+                  href={project.path}
                   target="_blank"
                   rel="noreferrer"
-                  className="bg-purple flex items-center gap-2 text-white font-poppins rounded-md p-2  transition duration-500 hover:bg-deep-purple"
+                  className="bg-purple hover:bg-deep-purple transition duration-200 text-white rounded-md px-2 py-1 flex items-center gap-1"
                 >
-                  <FaRegEye />
+                  <FaEye />
                   Deploy
                 </a>
               )}
             </div>
           </div>
         </div>
-      </motion.div>
-    );
-  } else {
-    return (
-      <motion.div variants={projectV} className="relative">
-        <div className="flex gap-4 bg-white text-black rounded-md p-4 w-full flex-col">
-          <div className="w-full h-full ">
-            <img
-              src={require(`../assets/${projectTitle}.jpeg`)}
-              alt={title}
-              className="w-full h-full object-cover rounded-md"
-            />
-          </div>
-          <div className="flex flex-col items-start h-full gap-2 mt-5 relative ">
-            <p className="text-3xl font-source-code font-bold">{title}</p>
-            <p className="text-lg font-poppins">{subtitle}</p>
-            <p className="text-lg font-poppins">Stacks:</p>
-            <div className="flex gap-2">
-              {technologies.map((tech, index) => {
+      ) : (
+        <div className="bg-white text-black rounded-md">
+          <img src={images[project.img]} alt={project.title} />
+          <div className="flex flex-col items-start p-4 gap-4">
+            <p className="font-source-code font-semibold text-2xl">
+              {project.title}
+            </p>
+            <div className="flex justify-between mt-5">
+              {project.subtitle[language]}
+            </div>
+            <div className="flex gap-4">
+              {project.technologies.map((tech, index) => {
                 return (
                   <div
                     key={index}
-                    className="bg-pink-two text-white font-poppins rounded-md p-2"
+                    className="bg-pink-two text-white rounded-md px-2 py-1"
                   >
                     {tech}
                   </div>
@@ -102,34 +98,34 @@ const Project = ({
               })}
             </div>
             <div className="flex gap-4">
-              {git && (
+              {project.git && (
                 <a
-                  href={git}
+                  href={project.git}
                   target="_blank"
                   rel="noreferrer"
-                  className="bg-purple flex items-center gap-2 text-white font-poppins rounded-md p-2 transition duration-500 hover:bg-deep-purple cursor-pointer"
+                  className="bg-purple hover:bg-deep-purple transition duration-200 text-white rounded-md px-2 py-1 flex items-center gap-1"
                 >
                   <FaGithub />
                   GitHub
                 </a>
               )}
-              {path && (
+              {project.path && (
                 <a
-                  href={path}
+                  href={project.path}
                   target="_blank"
                   rel="noreferrer"
-                  className="bg-purple flex items-center gap-2 text-white font-poppins rounded-md p-2  transition duration-500 hover:bg-deep-purple"
+                  className="bg-purple hover:bg-deep-purple transition duration-200 text-white rounded-md px-2 py-1 flex items-center gap-1"
                 >
-                  <FaRegEye />
+                  <FaEye />
                   Deploy
                 </a>
               )}
             </div>
           </div>
         </div>
-      </motion.div>
-    );
-  }
+      )}
+    </motion.div>
+  );
 };
 
 export default Project;

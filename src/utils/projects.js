@@ -1,21 +1,16 @@
-import arte from '../assets/arte-de-caderno.jpeg'
-import brFinancas from '../assets/br-finanças.jpeg'
-import patinhasFelizes from '../assets/patinhas-felizes.jpeg'
-import advice from '../assets/advice.jpeg'
-import splitter from '../assets/splitter.jpeg'
 
 
 export const projects = [
     {
         title: "Arte de Caderno",
         subtitle: {
-            pt: "Um site para um campeonato local de desenho e pintura por alunos de escolas públicas.",
-            en: "A website for a local drawing and painting championship by public school students."
+            pt: "Um site para um campeonato local de desenho e pintura por alunos de escolas públicas. Tema do meu Trabalho de Conclusão de Curso.",
+            en: "A website for a local drawing and painting championship by public school students. Theme of my Final Course Work."
         },
         technologies: ["React", "Styled-Components"],
         path: "https://artedecaderno.ifsuldeminas.edu.br",
         git: "https://github.com/ArtedeCaderno-IFSULDEMINAS/Arte-de-Caderno",
-        img: arte
+        img: "arte"
     },
     {
         title: "BR Finanças",
@@ -26,7 +21,7 @@ export const projects = [
         technologies: ["HandleBars", "Express", "MySQL"],
         path: null,
         git: "https://github.com/BeatrizNeaime/BR-financas",
-        img: brFinancas
+        img: "br-finanças"
     },
     {
         title: "Patinhas Felizes",
@@ -37,28 +32,28 @@ export const projects = [
         technologies: ["HandleBars", "Express", "MySQL"],
         path: null,
         git: "https://github.com/BeatrizNeaime/PatinhasFelizes",
-        img: patinhasFelizes
+        img: "patinhas-felizes"
     },
     {
         title: "Advice",
         subtitle: {
-            pt: "Um aplicativo para conselhos.",
-            en: "An advice app."
+            pt: "Precisa de um conselho? Experimente este aplicativo.",
+            en: "Need advice? Try this app."
         },
         technologies: ["React", "TailwindCSS"],
         path: "https://imaginative-paletas-b1d609.netlify.app",
         git: "https://github.com/BeatrizNeaime/advice.github.io",
-        img: advice
+        img: "advice"
     },
     {
         title: "Splitter",
         subtitle: {
-            pt: "Um aplicativo para dividir a conta.",
-            en: "A bill splitter app."
+            pt: "Já esteve em um bar com os amigos e não sabia como dividir a conta? Este aplicativo é para você. Simples e fácil de usar.",
+            en: "Have you ever been in a bar with friends and didn't know how to split the bill? This app is for you. Simple and easy to use."
         },
         technologies: ["React", "TailwindCSS"],
         path: "https://fm-tip-calculator-pi.vercel.app",
         git: "https://github.com/BeatrizNeaime/FM-tip-calculator",
-        img: splitter
+        img: "splitter"
     }
 ]

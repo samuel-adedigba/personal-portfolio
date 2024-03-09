@@ -47,7 +47,7 @@ export const texts = {
   },
   en: {
     landing: {
-      subtitle: "Full StackDeveloper.",
+      subtitle: "Full Stack Developer.",
       contact: "Contact Me",
       talk: "Let's talk.",
     },
@@ -74,7 +74,7 @@ export const texts = {
       },
       2: {
         title: "communicative",
-        text: "No matter your profession, communication is always a necessity in any field.",
+        text: "No matter your profession, communication is always a need in any field.",
       },
       3: {
         title: "open-minded",

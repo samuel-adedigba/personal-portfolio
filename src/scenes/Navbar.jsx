@@ -3,7 +3,6 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import { IoLanguageOutline } from "react-icons/io5";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { AiOutlineCloseCircle, AiOutlineMenu } from "react-icons/ai";
-import { GiBrazilFlag, GiUsaFlag } from "react-icons/gi";
 
 const Link = ({
   label,
@@ -96,7 +95,7 @@ const Navbar = ({
                 className="rounded-full bg-pink-two p-1"
                 onClick={() => setTranslateMenu(!translateMenu)}
               >
-                <IoLanguageOutline className="cursor-pointer relative text-deep-purple hover:text-white transition duration-300" />
+                <IoLanguageOutline className="cursor-pointer relative text-white hover:text-white transition duration-300" />
               </button>
               {translateMenu && (
                 <div className="absolute top-5 left-2 bg-light-purple px-2 py-1 w-auto">
@@ -104,17 +103,23 @@ const Navbar = ({
                     className="text-deep-blue"
                     onClick={() => changeLanguage("pt")}
                   >
-                    <p className={`font-source-code ${language === 'pt' ? "text-deep-purple" : "text-white"}`}>
+                    <p
+                      className={`font-source-code ${
+                        language === "pt" ? "text-pink-two underline" : "text-white"
+                      }`}
+                    >
                       PT
                     </p>
                   </button>
                   <button
-                    className={`text-deep-blue ${
-                      language === "en" ? "text-deep-purple" : "text-white"
-                    }`}
+                    className={`text-deep-blue `}
                     onClick={() => changeLanguage("en")}
                   >
-                    <p className={`font-source-code ${language === "en" ? "text-deep-purple" : "text-white"}`}>
+                    <p
+                      className={`font-source-code ${
+                        language === "en" ? "text-pink-two underline" : "text-white"
+                      }`}
+                    >
                       EN
                     </p>
                   </button>
@@ -192,11 +197,13 @@ const Navbar = ({
                       className="text-deep-blue"
                       onClick={() => changeLanguage("pt")}
                     >
-                      <GiBrazilFlag
-                        className={`text-xl ${
+                      <p
+                        className={`font-source-code ${
                           language === "pt" ? "text-pink-two" : "text-white"
                         }`}
-                      />
+                      >
+                        PT
+                      </p>
                     </button>
                     <button
                       className={`text-deep-blue ${
@@ -204,7 +211,13 @@ const Navbar = ({
                       }`}
                       onClick={() => changeLanguage("en")}
                     >
-                      <GiUsaFlag className="text-xl" />
+                      <p
+                        className={`font-source-code ${
+                          language === "en" ? "text-pink-two" : "text-white"
+                        }`}
+                      >
+                        EN
+                      </p>
                     </button>
                   </div>
                 )}
