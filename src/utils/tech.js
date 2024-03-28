@@ -17,4 +17,5 @@ export const technologies = [
     "WordPress",
     "SQL",
     "React Native",
+    "C#"
 ]
