@@ -1,8 +1,9 @@
 import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import { IoLanguageOutline } from "react-icons/io5";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { AiOutlineCloseCircle, AiOutlineMenu } from "react-icons/ai";
+import en from "../assets/svg/en.svg";
+import pt from "../assets/svg/pt.svg";
 
 const Link = ({
   label,
@@ -38,13 +39,10 @@ const Navbar = ({
   setLanguage,
 }) => {
   const [menuToggled, setMenuToggled] = useState(false);
-  const [translateMenu, setTranslateMenu] = useState(false);
   const desktop = useMediaQuery("(min-width: 768px)");
 
-  const changeLanguage = (lang) => {
-    setLanguage(lang);
-    setTranslateMenu(false);
-    setMenuToggled(false);
+  const toggleLanguage = () => {
+    setLanguage(language === "pt" ? "en" : "pt");
   };
 
   return (
@@ -91,40 +89,16 @@ const Navbar = ({
               setMenuToggled={setMenuToggled}
             />
             <div className="flex flex-col relative">
-              <button
-                className="rounded-full bg-pink-two p-1"
-                onClick={() => setTranslateMenu(!translateMenu)}
+              <div
+                className="flex relative align-middle justify-center gap-1 "
+                onClick={toggleLanguage}
               >
-                <IoLanguageOutline className="cursor-pointer relative text-white hover:text-white transition duration-300" />
-              </button>
-              {translateMenu && (
-                <div className="absolute top-5 left-2 bg-light-purple px-2 py-1 w-auto">
-                  <button
-                    className="text-deep-blue"
-                    onClick={() => changeLanguage("pt")}
-                  >
-                    <p
-                      className={`font-source-code ${
-                        language === "pt" ? "text-pink-two underline" : "text-white"
-                      }`}
-                    >
-                      PT
-                    </p>
-                  </button>
-                  <button
-                    className={`text-deep-blue `}
-                    onClick={() => changeLanguage("en")}
-                  >
-                    <p
-                      className={`font-source-code ${
-                        language === "en" ? "text-pink-two underline" : "text-white"
-                      }`}
-                    >
-                      EN
-                    </p>
-                  </button>
-                </div>
-              )}
+                <img
+                  src={language == "pt" ? pt : en}
+                  alt={language}
+                  className="cursor-pointer lang-image "
+                />
+              </div>
             </div>
           </div>
         ) : (
@@ -186,41 +160,15 @@ const Navbar = ({
                 setSelectedPage={setSelectedPage}
                 setMenuToggled={setMenuToggled}
               />
-              <div className="flex flex-col relative">
-                <IoLanguageOutline
-                  className="cursor-pointer relative hover:text-pink-two"
-                  onClick={() => setTranslateMenu(!translateMenu)}
+              <div
+                className="flex relative align-middle justify-center gap-1 "
+                onClick={toggleLanguage}
+              >
+                <img
+                  src={language == "pt" ? pt : en}
+                  alt={language}
+                  className="cursor-pointer lang-image "
                 />
-                {translateMenu && (
-                  <div className="absolute top-4 bg-light-purple px-2 py-1 w-auto">
-                    <button
-                      className="text-deep-blue"
-                      onClick={() => changeLanguage("pt")}
-                    >
-                      <p
-                        className={`font-source-code ${
-                          language === "pt" ? "text-pink-two" : "text-white"
-                        }`}
-                      >
-                        PT
-                      </p>
-                    </button>
-                    <button
-                      className={`text-deep-blue ${
-                        language === "en" ? "text-pink-two" : "text-white"
-                      }`}
-                      onClick={() => changeLanguage("en")}
-                    >
-                      <p
-                        className={`font-source-code ${
-                          language === "en" ? "text-pink-two" : "text-white"
-                        }`}
-                      >
-                        EN
-                      </p>
-                    </button>
-                  </div>
-                )}
               </div>
             </div>
           </div>

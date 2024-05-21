@@ -1,11 +1,10 @@
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import LineGradient from "../components/LineGradient";
-import {} from "react-bootstrap";
 import { technologies } from "../utils/tech";
-import { texts } from './../utils/texts';
+import { texts } from "./../utils/texts";
 
-const AboutMe = ({language}) => {
+const AboutMe = ({ language }) => {
   const mediumScreens = useMediaQuery("(min-width: 1060px)");
 
   return (
@@ -57,7 +56,7 @@ const AboutMe = ({language}) => {
               <img
                 alt="profile photo"
                 className="z-10 max-w-sm rounded-3xl shadow-xl"
-                src={require("../assets/profile2.png")}
+                src={require("../assets/profile2.jpg")}
               />
             </div>
           ) : (

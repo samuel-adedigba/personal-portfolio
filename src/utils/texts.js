@@ -15,8 +15,8 @@ export const texts = {
     about: {
       title: "<sobre/>",
       text: "Olá! Meu nome é Beatriz Neaime, sou Engenheira de Computação e desenvolvedora web full stack na",
-      empresa: " Iatrix",
-      link: "#",
+      empresa: " IAtrix",
+      link: "https://iatrix.com.br",
       text2: ", uma nova empresa de tecnologia. Comecei a aprender desenvolvimento web durante a pandemia, através de cursos online para aprender o básico e aprimorar minhas habilidades, garantindo que aprendi o suficiente para seguir em frente e tentar as tecnologias mais recentes. Aqui estão algumas tecnologias com as quais estou familiarizada:",
     },
     skills: {
@@ -61,8 +61,8 @@ export const texts = {
     about: {
       title: "<about/>",
       text: "Hi! My name is Beatriz Neaime, I'm a Computer Engineer and a full stack web developer at",
-      empresa: " Iatrix",
-      link: "#",
+      empresa: " IAtrix",
+      link: "https://iatrix.com.br",
       text2: ", a new tech company. I started learning web development during the pandemic, through online courses to learn the basics and improve my skills, making sure I learned enough to move forward and try the latest technologies. Here are some technologies I'm familiar with:",
     },
     skills: {
