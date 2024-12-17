@@ -1,2 +1,2 @@
 # personal-portfolio
-My personal portfolio as a Fromtend Developer
+My personal portfolio as a Frontend Developer
