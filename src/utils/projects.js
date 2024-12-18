@@ -7,7 +7,7 @@ export const projects = [
             pt: "Um site para um campeonato local de desenho e pintura por alunos de escolas públicas. Tema do meu Trabalho de Conclusão de Curso.",
             en: "A webapp that helps businesses and homes track their gas usage in real-time, and delivers to them before they run-out."
         },
-        technologies: ["React","Styled-Components","Redux-Toolkit","Tailwind CSS"],
+        technologies: ["React","Styled-Components","Redux-Toolkit"],
         path: "https://homefort.africa",
         git: "https://homefort.africa",
         img: "Hub_Dashboard"
