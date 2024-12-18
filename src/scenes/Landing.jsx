@@ -21,14 +21,14 @@ const Landing = ({ setSelectedPage, language }) => {
             <img
               alt="profile"
               className="hover:filter hover:saturate-150 transition duration-500 z-10 w-full max-w-[300px] md:max-w-[350px] rounded-t-[950px] "
-              src={require("../assets/mypicture2.jpg")}
+              src={require("../assets/mypicture3.jpg")}
             />
           </div>
         ) : (
           <img
             alt="profile"
             className="z-10 w-full max-w-[300px] md:max-w-[600px] rounded-top-[150px] "
-            src={require("../assets/mypicture.jpg")}
+            src={require("../assets/mypicture3.jpg")}
           />
         )}
       </div>
