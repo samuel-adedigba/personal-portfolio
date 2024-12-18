@@ -48,8 +48,8 @@ const Projects = ({ language }) => {
           {/* idk why foreach/map is not working */}
           <Project project={projects[0]} language={language} />
           <Project project={projects[1]} language={language} />
-          <Project project={projects[2]} language={language} />
-          <Project project={projects[3]} language={language} />
+          {/* <Project project={projects[2]} language={language} />
+          <Project project={projects[3]} language={language} /> */}
         </motion.div>
       </div>
     </section>
