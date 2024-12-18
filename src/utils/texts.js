@@ -61,11 +61,11 @@ export const texts = {
     about: {
       title: "<about/>",
      // text: "Hi! My name is Beatriz Neaime, I'm a Computer Engineer and a full stack web developer at",
-      text: "Hi! My name is Samuel Adedigba, I'm a frontend web developer at",
+      text: "Hi! My name is Samuel Adedigba, I'm a Frontend Developer at",
       empresa: " Homefort",
       link: "https://homefort.africa",
      // text2: ", a new tech company. I started learning web development during the pandemic, through online courses to learn the basics and improve my skills, making sure I learned enough to move forward and try the latest technologies. Here are some technologies I'm familiar with:",
-    text2: ", a venture capital backed cleaning energy startup organization. I started learning web development during the pandemic, through online courses to learn the basics and improve my skills, making sure I learned enough to move forward and try the latest technologies. Here are some technologies I'm familiar with:",
+    text2: ", a venture-capital backed cleaning energy startup organization. I started learning web development during the pandemic, through online courses to learn the basics and improve my skills, making sure I learned enough to move forward and try the latest technologies. Here are some technologies I'm familiar with:",
     },
     skills: {
       title: "<skills/>",
