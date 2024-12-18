@@ -2,7 +2,7 @@
 const Footer = () => {
     return (
         <div className='flex justify-center p-5 text-sm text-purple' >
-            &copy; Beatriz Neaime - {new Date().getFullYear()}
+            &copy; Samuel Adedigba - {new Date().getFullYear()}
         </div>
     )
 }

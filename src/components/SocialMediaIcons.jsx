@@ -3,14 +3,14 @@ import { BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs";
 const SocialMediaIcons = () => {
   return (
     <div className="flex justify-centermd:justify-start my-10 gap-7" >
-      <a href="https://www.linkedin.com/in/beatriz-neaime-1564b51b1/"
+      <a href="https://www.linkedin.com/in/samuel-adedigba"
         className="hover:opacity-50 transition duration-500 "
         target="_blank"
         rel="noreferrer"
       >
         <BsLinkedin />
       </a>
-      <a href="https://github.com/BeatrizNeaime"
+      <a href="https://github.com/samuel-adedigba"
         className="hover:opacity-50 transition duration-500 "
         target="_blank"
         rel="noreferrer"

@@ -20,15 +20,15 @@ const Landing = ({ setSelectedPage, language }) => {
           >
             <img
               alt="profile"
-              className="hover:filter hover:saturate-150 transition duration-500 z-10 w-full max-w-[300px] md:max-w-[350px] rounded-t-[150px] "
-              src={require("../assets/profile.png")}
+              className="hover:filter hover:saturate-150 transition duration-500 z-10 w-full max-w-[300px] md:max-w-[350px] rounded-t-[950px] "
+              src={require("../assets/mypicture2.jpg")}
             />
           </div>
         ) : (
           <img
             alt="profile"
             className="z-10 w-full max-w-[300px] md:max-w-[600px] rounded-top-[150px] "
-            src={require("../assets/profile.png")}
+            src={require("../assets/mypicture.jpg")}
           />
         )}
       </div>
@@ -45,7 +45,7 @@ const Landing = ({ setSelectedPage, language }) => {
           }}
         >
           <p className="text-6xl font-poppins text-purple z-10 text-center md:text-start">
-            {`<Beatriz Neaime/>`}
+            {`<Samuel Adedigba/>`}
           </p>
 
           <p className="mt-10 mb-7 font-source-code text-sm text-center md:text-start">

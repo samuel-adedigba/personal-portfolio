@@ -142,20 +142,20 @@ const Contact = ({ language }) => {
         >
           {largeScreens ? (
             <div
-              className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-[170px]
+              className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-[150px]
                         before:w-full before:max-w-[400px] md:before:max-w-[400px] before:h-full before:border-2 before:border-purple before:z-[-1]"
             >
               <img
                 alt="profile"
-                className="hover:filter hover:saturate-150 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[500px]"
-                src={require("../assets/profile3.png")}
+                className="hover:filter hover:saturate-150 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[500px] rounded-[150px]"
+                src={require("../assets/mypicture.jpg")}
               />
             </div>
           ) : (
             <img
               alt="profile"
               className="z-10 w-full max-w-[400px] md:max-w-[600px]"
-              src={require("../assets/profile3.png")}
+              src={require("../assets/mypicture.jpg")}
             />
           )}
         </motion.div>
@@ -185,7 +185,7 @@ const Contact = ({ language }) => {
             {errors.name && (
               <p className="text-red mt-1">
                 {errors.name.type === "required" &&
-                  (language == "pt"
+                  (language === "pt"
                     ? "Este campo é obrigatório"
                     : "This field is required.")}
                 {errors.name.type === "maxLength" && "Max length is 100 char."}
@@ -204,11 +204,11 @@ const Contact = ({ language }) => {
             {errors.email && (
               <p className="text-red mt-1">
                 {errors.email.type === "required" &&
-                  (language == "pt"
+                  (language === "pt"
                     ? "Este campo é obrigatório"
                     : "This field is required.")}
                 {errors.email.type === "pattern" &&
-                  (language == "pt"
+                  (language === "pt"
                     ? "Endereço de email inválido. "
                     : "Invalid email address.")}
               </p>
@@ -227,7 +227,7 @@ const Contact = ({ language }) => {
             />
             {errors.message && (
               <p className="text-red mt-1">
-                {errors.message.type === "required" && language == "pt"
+                {errors.message.type === "required" && language === "pt"
                   ? "Este campo é obrigatório"
                   : "This field is required."}
                 {errors.message.type === "maxLength" &&

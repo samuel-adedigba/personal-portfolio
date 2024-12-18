@@ -13,8 +13,8 @@ const Alert = ({ title, text, type }) => {
   return (
     <div className="toast show">
       <div className="toast-content">
-        {type == "success" && <IoMdCheckmark className="icon" />}
-        {type == "error" && <IoMdClose className="icon" />}
+        {type === "success" && <IoMdCheckmark className="icon" />}
+        {type === "error" && <IoMdClose className="icon" />}
         <div className="message">
           <span className="text text-1">{title}</span>
           <span className="text text-2">{text}</span>

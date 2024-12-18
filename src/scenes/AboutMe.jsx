@@ -30,7 +30,7 @@ const AboutMe = ({ language }) => {
             <a
               className="text-pink-two font-bold"
               href={texts[language].about.link}
-              target="_blank"
+              target="_blank" rel=""
             >
               {texts[language].about.empresa}
             </a>{" "}
@@ -56,7 +56,7 @@ const AboutMe = ({ language }) => {
               <img
                 alt="profile photo"
                 className="z-10 max-w-sm rounded-3xl shadow-xl"
-                src={require("../assets/profile2.jpg")}
+                src={require("../assets/mypicture.jpg")}
               />
             </div>
           ) : (

@@ -48,7 +48,7 @@ const Navbar = ({
   return (
     <nav className={`bg-deep-purple z-40 w-full fixed top-0 py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6 ">
-        <h4 className="font-poppins text-3xl font-bold"> {`<BN/>`} </h4>
+        <h4 className="font-poppins text-3xl font-bold"> {`<SA/>`} </h4>
 
         {/* DESKTOP */}
         {desktop ? (
@@ -94,7 +94,7 @@ const Navbar = ({
                 onClick={toggleLanguage}
               >
                 <img
-                  src={language == "pt" ? pt : en}
+                  src={language === "pt" ? pt : en}
                   alt={language}
                   className="cursor-pointer lang-image "
                 />
@@ -165,7 +165,7 @@ const Navbar = ({
                 onClick={toggleLanguage}
               >
                 <img
-                  src={language == "pt" ? pt : en}
+                  src={language === "pt" ? pt : en}
                   alt={language}
                   className="cursor-pointer lang-image "
                 />
