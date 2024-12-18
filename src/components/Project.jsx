@@ -6,6 +6,8 @@ import brF from '../assets/projects/br-finanças.png'
 import advice from '../assets/projects/advice.png'
 import splitter from '../assets/projects/splitter.png'
 import patinhas from '../assets/projects/patinhas-felizes.png'
+import HubDashboard from '../assets/projects/hub-dashboard.png'
+import Landing from '../assets/projects/Landing_page.png'
 
 const projectV = {
   hidden: { opacity: 0, scale: 0.8 },
@@ -13,11 +15,13 @@ const projectV = {
 };
 
 const images = {
-  "arte": arte,
-  "br-finanças": brF,
-  "advice": advice,
-  "splitter": splitter,
-  "patinhas-felizes": patinhas
+  // "arte": arte,
+  // "br-finanças": brF,
+  // "advice": advice,
+  // "splitter": splitter,
+  // "patinhas-felizes": patinhas,
+  "Hub_Dashboard": HubDashboard,
+  "Landing_page": Landing,
 }
 
 const Project = ({ project, language }) => {
