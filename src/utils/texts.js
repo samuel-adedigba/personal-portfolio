@@ -69,21 +69,21 @@ export const texts = {
     },
     skills: {
       title: "<skills/>",
-      text: `Since the beginning of my journey as a developer, I've improved my soft skills, always seeking to be a better professional. `,
+      text: `I focus on creating seamless and efficient web experiences while continuously improving my technical and collaborative skills.`,
       1: {
-        title: "non-stop learning",
-        text: "Technology never stops updating, that's why those who work with technology should not stop updating themselves either.",
+        title: "Frontend Application Development",
+        text: "I build responsive and high-performance applications that prioritize user experience, scalability, and maintainability.",
       },
       2: {
-        title: "communicative",
-        text: "No matter your profession, communication is always a need in any field.",
+        title: "UI/UX Design",
+        text: "Skilled at translating Figma designs into clean, functional code and creating seamless user interfaces that focuses on usability and performance.",
       },
       3: {
-        title: "open-minded",
-        text: "When you work for people, you need to accept new ideas from clients or team members and be able to work on them.",
-
+        title: "Collaborative Development",
+        text: "I enjoy working in teams, contributing to code reviews, and solving challenges together to deliver quality solutions.",
       }
     },
+    
     projects: {
       title: "<projects/>",
       text: "Projects are important ways to improve your skills and show what you are capable of. Here are some of my most recent projects:",

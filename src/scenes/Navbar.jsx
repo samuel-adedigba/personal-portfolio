@@ -2,7 +2,7 @@ import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { AiOutlineCloseCircle, AiOutlineMenu } from "react-icons/ai";
-import en from "../assets/svg/en.svg";
+import en from "../assets/svg/en.png";
 import pt from "../assets/svg/pt.svg";
 
 const Link = ({

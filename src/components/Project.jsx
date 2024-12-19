@@ -1,11 +1,6 @@
 import { motion } from "framer-motion";
 import useMediaQuery from "./../hooks/useMediaQuery";
 import { FaGithub, FaEye } from "react-icons/fa";
-import arte from '../assets/projects/arte.png'
-import brF from '../assets/projects/br-finanças.png'
-import advice from '../assets/projects/advice.png'
-import splitter from '../assets/projects/splitter.png'
-import patinhas from '../assets/projects/patinhas-felizes.png'
 import HubDashboard from '../assets/projects/hub-dashboard.png'
 import Landing from '../assets/projects/Landing_page.png'
 

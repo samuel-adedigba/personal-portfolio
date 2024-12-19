@@ -56,7 +56,7 @@ const AboutMe = ({ language }) => {
               <img
                 alt="profile photo"
                 className="z-10 max-w-sm rounded-3xl shadow-xl"
-                src={require("../assets/mypicture.jpg")}
+                src={require("../assets/group.jpg")}
               />
             </div>
           ) : (

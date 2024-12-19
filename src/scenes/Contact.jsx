@@ -57,7 +57,7 @@ const Contact = ({ language }) => {
       message: message.value,
     };
 
-    const a = await fetch("https://formsubmit.co/el/giviyi", {
+    const a = await fetch("/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
